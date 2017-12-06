@@ -13,7 +13,7 @@ def conv3x3(in_planes, out_planes, stride=1):
 class BasicBlock(nn.Module):
     expansion = 1
 
-    def __init__(self, inplanes, planes, stride=1, downsample=None):
+    def __init__(self, inplanes, planes, stride=1, downsample=None,dropout=0):
         super(BasicBlock, self).__init__()
         self.conv1 = conv3x3(inplanes, planes, stride)
         self.bn1 = nn.BatchNorm2d(planes)
@@ -22,6 +22,8 @@ class BasicBlock(nn.Module):
         self.bn2 = nn.BatchNorm2d(planes)
         self.downsample = downsample
         self.stride = stride
+        self.dropout=dropout
+        self.dp = nn.Dropout2d(p=self.dropout)
 
     def forward(self, x):
         residual = x
@@ -38,6 +40,8 @@ class BasicBlock(nn.Module):
 
         out += residual
         out = self.relu(out)
+        if self.dropout >0:
+            out = self.dp(out)
 
         return out
 
@@ -45,7 +49,7 @@ class BasicBlock(nn.Module):
 class Bottleneck(nn.Module):
     expansion = 4
 
-    def __init__(self, inplanes, planes, stride=1, downsample=None):
+    def __init__(self, inplanes, planes, stride=1, downsample=None, dropout=0):
         super(Bottleneck, self).__init__()
         self.conv1 = nn.Conv2d(inplanes, planes, kernel_size=1, bias=False)
         self.bn1 = nn.BatchNorm2d(planes)
@@ -57,7 +61,10 @@ class Bottleneck(nn.Module):
         self.relu = nn.ReLU(inplace=True)
         self.downsample = downsample
         self.stride = stride
+        self.dropout = dropout
+        self.dp = nn.Dropout2d(p=self.dropout)
 
+        
     def forward(self, x):
         residual = x
 
@@ -77,14 +84,18 @@ class Bottleneck(nn.Module):
 
         out += residual
         out = self.relu(out)
+        
+        if self.dropout >0:
+            out = self.dp(out)
 
         return out
 
 
 class ResNet(nn.Module):
 
-    def __init__(self, block, layers, num_classes=1000):
+    def __init__(self, block, layers, num_classes=1000,dropout=0):
         self.inplanes = 64
+        self.dropout= dropout
         super(ResNet, self).__init__()
         self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=1, padding=3,
                                bias=False)
@@ -97,7 +108,8 @@ class ResNet(nn.Module):
         self.layer4 = self._make_layer(block, 512, layers[3], stride=2)
         self.avgpool = nn.AvgPool2d(5, stride=1)   # if input stride 1 output 5
         self.fc = nn.Linear(512 * block.expansion, num_classes)
-
+        #self.dp = nn.Dropout(p=0.5)
+        
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
                 n = m.kernel_size[0] * m.kernel_size[1] * m.out_channels
@@ -116,10 +128,10 @@ class ResNet(nn.Module):
             )
 
         layers = []
-        layers.append(block(self.inplanes, planes, stride, downsample))
+        layers.append(block(self.inplanes, planes, stride, downsample,dropout=self.dropout))
         self.inplanes = planes * block.expansion
         for i in range(1, blocks):
-            layers.append(block(self.inplanes, planes))
+            layers.append(block(self.inplanes, planes, dropout=self.dropout))
 
         return nn.Sequential(*layers)
 
@@ -136,6 +148,7 @@ class ResNet(nn.Module):
         
         x = self.avgpool(x)
         x = x.view(x.size(0), -1)
+        #x = self.dp(x)
         x = self.fc(x)
 
         return x
