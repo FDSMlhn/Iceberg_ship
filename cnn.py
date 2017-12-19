@@ -6,23 +6,24 @@ class plain_cnn(nn.Module):
 
     def __init__(self,layers=[64,128,128,64], num_classes=2,dropout= [0.2,0.2,0.3,0.3]):
         self.inplane=3
-        super(ResNet, self).__init__()
+        super().__init__()
         self.layer1 = self._make_layer(64, layers[0], dropout=dropout[0])
         self.layer2 = self._make_layer(128, layers[1], dropout=dropout[1])
         self.layer3 = self._make_layer(128, layers[2], dropout=dropout[2])
         self.layer4 = self._make_layer(64, layers[3], dropout=dropout[3])
-
-        self.fc1 = nn.Linear(64 * 7*7, 64 * 7*7)
-        self.bn1 = nn.BatchNorm1d(64 * 7*7)
+        
+        self.n =5
+        self.fc1 = nn.Linear(64 * self.n*self.n, 64 * self.n*self.n)
+        self.bn1 = nn.BatchNorm1d(64 * self.n*self.n)
         self.relu1 =nn.ReLU()
-        self.dropout1 = nn.Dropout2d(p=0.2)
+        self.dropout1 = nn.Dropout2d(p=0.4)
         
-        self.fc2 = nn.Linear(32 * 7*7, 32 * 7*7)
-        self.bn2 = nn.BatchNorm1d(32 * 7*7)
+        self.fc2 = nn.Linear(64 * self.n*self.n, 32 * self.n*self.n)
+        self.bn2 = nn.BatchNorm1d(32 * self.n*self.n)
         self.relu2 =nn.ReLU()
-        self.dropout2 = nn.Dropout2d(p=0.2)
+        self.dropout2 = nn.Dropout2d(p=0.4)
         
-        self.fc3 = nn.Linear(32 * 7*7, num_classes)
+        self.fc3 = nn.Linear(32 * self.n*self.n, num_classes)
         #self.dp = nn.Dropout(p=0.5)
 
     def _make_layer(self, planes, blocks, dropout):

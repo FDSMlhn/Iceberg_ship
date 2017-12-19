@@ -3,7 +3,7 @@ import sys
 import os
 
 
-TOTAL_BAR_LENGTH = 45.
+TOTAL_BAR_LENGTH = 25
 last_time = time.time()
 begin_time = last_time
 
@@ -30,18 +30,20 @@ def progress_bar(current, total, msg=None):
     tot_time = cur_time - begin_time
 
     L = []
-    L.append('  Step: %s' % format_time(step_time))
-    L.append(' | Tot: %s' % format_time(tot_time))
+    L.append('Step: %s' % format_time(step_time))
+    L.append('| Tot: %s' % format_time(tot_time))
     if msg:
-        L.append(' | ' + msg)
+        L.append('|' + msg)
 
     msg = ''.join(L)
-    sys.stdout.write(bar)
-    sys.stdout.write(msg)
+    bar =  bar[:int(TOTAL_BAR_LENGTH/2 -2)] + ' %3d/%3d ' % (current+1, total) + bar[int(TOTAL_BAR_LENGTH/2 +7):] 
+#     print(bar)
+#     print(msg)
+    sys.stdout.write(bar+msg)
     
-    sys.stdout.write('\r')
-    sys.stdout.write(bar[:int(TOTAL_BAR_LENGTH/2 -2)])
-    sys.stdout.write(' %d/%d ' % (current+1, total))
+#     sys.stdout.write('\r')
+#     sys.stdout.write(bar[:int(TOTAL_BAR_LENGTH/2 -2)])
+#     sys.stdout.write(' %3d/%3d ' % (current+1, total))
     if current < total-1:
         sys.stdout.write('\r')
     else:
@@ -57,7 +59,7 @@ def format_time(seconds):
     seconds = seconds - minutes*60
     secondsf = int(seconds)
     seconds = seconds - secondsf
-    millis = int(seconds*1000)
+    millis = int(seconds*10) #only first digit wanted
 
     f = ''
     i = 1
