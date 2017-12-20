@@ -2,9 +2,9 @@ import torch.nn as nn
 import math
 
 
-class plain_cnn(nn.Module):
+class fcn(nn.Module):
 
-    def __init__(self,layers=[64,128,128,64], num_classes=2,dropout= [0.2,0.2,0.3,0.3]):
+    def __init__(self,layers=[64,128,256,256], num_classes=2,dropout= [0.0,0.0,0.0,0.0]):
         self.inplane=3
         super().__init__()
         self.layer1 = self._make_layer(layers[0], dropout=dropout[0])
@@ -12,21 +12,13 @@ class plain_cnn(nn.Module):
         self.layer3 = self._make_layer(layers[2], dropout=dropout[2])
         self.layer4 = self._make_layer(layers[3], dropout=dropout[3])
         
-        self.n =5
-        self.fc1 = nn.Linear(64 * self.n*self.n, 64 * self.n*self.n)
-        self.bn1 = nn.BatchNorm1d(64 * self.n*self.n)
-        self.relu1 =nn.ReLU()
-        self.dropout1 = nn.Dropout2d(p=0.4)
-        
-        self.fc2 = nn.Linear(64 * self.n*self.n, 32 * self.n*self.n)
-        self.bn2 = nn.BatchNorm1d(32 * self.n*self.n)
-        self.relu2 =nn.ReLU()
-        self.dropout2 = nn.Dropout2d(p=0.4)
-        
-        self.fc3 = nn.Linear(32 * self.n*self.n, num_classes)
+
+        self.cnn = nn.Conv2d(self.inplane, num_classes, kernel_size=3, padding=1,
+                               bias=False)
+        self.avg = nn.AvgPool2d(5)
         #self.dp = nn.Dropout(p=0.5)
 
-    def _make_layer(self, planes, dropout):
+    def _make_layer(self, planes, blocks, dropout):
         layer = nn.Sequential(
                     nn.Conv2d(self.inplane, planes, kernel_size=3, padding=1,
                                bias=False),
@@ -44,9 +36,7 @@ class plain_cnn(nn.Module):
         x = self.layer3(x)
         x = self.layer4(x)
         
-        x = x.view(x.size(0), -1)
-        x = self.dropout1(self.relu1(self.bn1(self.fc1(x))))
-        x = self.dropout2(self.relu2(self.bn2(self.fc2(x))))
-        x = self.fc3(x)
+        x = self.cnn(x)
+        x = self.avg(x)
         
         return x
