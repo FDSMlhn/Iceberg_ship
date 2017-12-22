@@ -1,10 +1,11 @@
+import torch
 import torch.nn as nn
 import math
 
 
 class fcn(nn.Module):
 
-    def __init__(self,layers=[64,128,256,256], num_classes=2,dropout= [0.0,0.0,0.0,0.0]):
+    def __init__(self,layers=[64,128,256,256], num_classes=2,dropout= [0.2,0.2,0.3,0.7]):
         self.inplane=3
         super().__init__()
         self.layer1 = self._make_layer(layers[0], dropout=dropout[0])
@@ -18,7 +19,7 @@ class fcn(nn.Module):
         self.avg = nn.AvgPool2d(5)
         #self.dp = nn.Dropout(p=0.5)
 
-    def _make_layer(self, planes, blocks, dropout):
+    def _make_layer(self, planes, dropout):
         layer = nn.Sequential(
                     nn.Conv2d(self.inplane, planes, kernel_size=3, padding=1,
                                bias=False),
@@ -39,4 +40,4 @@ class fcn(nn.Module):
         x = self.cnn(x)
         x = self.avg(x)
         
-        return x
+        return torch.squeeze(x)
