@@ -93,7 +93,7 @@ class Bottleneck(nn.Module):
 
 class ResNet(nn.Module):
 
-    def __init__(self, block, layers, num_classes=1000,dropout=0):
+    def __init__(self, block, layers, num_classes=1000,dropout=[0,0,0,0]):
         self.inplanes = 64
         self.dropout= dropout
         super(ResNet, self).__init__()
@@ -102,10 +102,10 @@ class ResNet(nn.Module):
         self.bn1 = nn.BatchNorm2d(64)
         self.relu = nn.ReLU(inplace=True)
         self.maxpool = nn.MaxPool2d(kernel_size=3, stride=2, padding=1)
-        self.layer1 = self._make_layer(block, 64, layers[0])
-        self.layer2 = self._make_layer(block, 128, layers[1], stride=2)
-        self.layer3 = self._make_layer(block, 256, layers[2], stride=2)
-        self.layer4 = self._make_layer(block, 512, layers[3], stride=2)
+        self.layer1 = self._make_layer(block, 64, layers[0],drop_out=self.dropout[0])
+        self.layer2 = self._make_layer(block, 128, layers[1], stride=2,drop_out=self.dropout[1])
+        self.layer3 = self._make_layer(block, 256, layers[2], stride=2,drop_out=self.dropout[2])
+        self.layer4 = self._make_layer(block, 512, layers[3], stride=2,drop_out=self.dropout[3])
         self.avgpool = nn.AvgPool2d(5, stride=1)   # if input stride 1 output 5
         self.fc = nn.Linear(512 * block.expansion, num_classes)
         #self.dp = nn.Dropout(p=0.5)
@@ -118,7 +118,7 @@ class ResNet(nn.Module):
                 m.weight.data.fill_(1)
                 m.bias.data.zero_()
 
-    def _make_layer(self, block, planes, blocks, stride=1):
+    def _make_layer(self, block, planes, blocks, drop_out,stride=1):
         downsample = None
         if stride != 1 or self.inplanes != planes * block.expansion:
             downsample = nn.Sequential(
@@ -128,10 +128,10 @@ class ResNet(nn.Module):
             )
 
         layers = []
-        layers.append(block(self.inplanes, planes, stride, downsample,dropout=self.dropout))
+        layers.append(block(self.inplanes, planes, stride, downsample,dropout=drop_out))
         self.inplanes = planes * block.expansion
         for i in range(1, blocks):
-            layers.append(block(self.inplanes, planes, dropout=self.dropout))
+            layers.append(block(self.inplanes, planes, dropout=drop_out))
 
         return nn.Sequential(*layers)
 

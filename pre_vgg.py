@@ -36,10 +36,15 @@ class VGG(nn.Module):
             nn.Linear(4096, num_classes),
         )
         self._initialize_weights()
-
+        #self.avg= nn.AvgPool2d(2)
+        self.avg=nn.MaxPool2d(2)
+        
     def forward(self, x):
         x = self.features(x)
-        x = x.view(x.size(0), -1)
+#        x = x.view(x.size(0), -1)
+        #change to smaller one
+        x = self.avg(x)
+        x = x.squeeze()
         x = self.classifier(x)
         return x
 
