@@ -115,7 +115,7 @@ class Inception3(nn.Module):
         # 8 x 8 x 2048
         x = F.avg_pool2d(x, kernel_size=8)
         # 1 x 1 x 2048
-        x = F.dropout(x, training=self.training)
+        x = F.dropout(x,p=0.4 ,training=self.training)
         # 1 x 1 x 2048
         x = x.view(x.size(0), -1)
         # 2048
