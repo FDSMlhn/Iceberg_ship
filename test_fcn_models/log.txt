@@ -1,0 +1,6 @@
+Phase2, At fold 0, seed 5555,round 1 we find one with acc: 94.57627118644068, loss: 0.17831873344415325
+Phase2, At fold 0, seed 5555,round 1 we find one with acc: 94.91525423728814, loss: 0.18487334703489886
+Phase2, At fold 1, seed 5555,round 1 we find one with acc: 90.81632653061224, loss: 0.2602530278924371
+Phase2, At fold 2, seed 5555,round 1 we find one with acc: 94.5578231292517, loss: 0.16718507228659935
+Phase2, At fold 3, seed 5555,round 1 we find one with acc: 93.19727891156462, loss: 0.2063273817909007
+Phase2, At fold 4, seed 5555,round 1 we find one with acc: 91.15646258503402, loss: 0.2500467705888813

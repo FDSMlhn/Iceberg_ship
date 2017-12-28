@@ -1,0 +1,4 @@
+18: At fold 0, seed 5555,round 1 we find one with acc: 90.03115264797508, loss: 0.27348631936070333
+18: At fold 0, seed 5555,round 1 we find one with acc: 70.40498442367601, loss: 0.5817606074045009
+18: At fold 0, seed 5555,round 1 we find one with acc: 90.96573208722741, loss: 0.23836891450614572
+18: At fold 0, seed 5555,round 1 we find one with acc: 90.65420560747664, loss: 0.2230212019982739

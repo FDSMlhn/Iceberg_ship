@@ -1,0 +1,207 @@
+At fold 0, seed [146],round 1 we find one with acc: 95.2542372881356, loss: 0.18539233359239868
+At fold 0, seed [146],round 2 we find one with acc: 94.57627118644068, loss: 0.17591842635203217
+At fold 1, seed [146],round 1 we find one with acc: 92.17687074829932, loss: 0.22899255273090738
+At fold 1, seed [146],round 2 we find one with acc: 91.15646258503402, loss: 0.23413297817820594
+We are going to give up this round
+At fold 2, seed [146],round 1 we find one with acc: 92.17687074829932, loss: 0.20919224802328615
+At fold 2, seed [146],round 2 we find one with acc: 92.17687074829932, loss: 0.22333293321992265
+We are going to give up this round
+At fold 3, seed [146],round 1 we find one with acc: 94.89795918367346, loss: 0.1644346033077256
+At fold 3, seed [146],round 2 we find one with acc: 94.5578231292517, loss: 0.16297559186714847
+At fold 3, seed [146],round 3 we find one with acc: 94.89795918367346, loss: 0.17908066361635722
+At fold 4, seed [146],round 1 we find one with acc: 93.87755102040816, loss: 0.20151085411610248
+At fold 4, seed [146],round 2 we find one with acc: 93.87755102040816, loss: 0.21162002244774175
+We are going to give up this round
+At fold 0, seed [9294],round 1 we find one with acc: 92.20338983050847, loss: 0.2339296024734691
+At fold 0, seed [9294],round 2 we find one with acc: 92.88135593220339, loss: 0.24293135475304167
+We are going to give up this round
+At fold 1, seed [9294],round 1 we find one with acc: 92.85714285714286, loss: 0.18091758325391885
+At fold 1, seed [9294],round 2 we find one with acc: 92.85714285714286, loss: 0.18069878869316205
+At fold 2, seed [9294],round 1 we find one with acc: 93.19727891156462, loss: 0.21332068485366243
+At fold 2, seed [9294],round 2 we find one with acc: 92.85714285714286, loss: 0.20314348572675062
+We are going to give up this round
+At fold 3, seed [9294],round 1 we find one with acc: 94.89795918367346, loss: 0.1857337918715412
+At fold 3, seed [9294],round 2 we find one with acc: 94.89795918367346, loss: 0.16587199775033257
+At fold 4, seed [9294],round 1 we find one with acc: 93.5374149659864, loss: 0.19560718328571644
+At fold 4, seed [9294],round 2 we find one with acc: 93.5374149659864, loss: 0.20308812266709853
+At fold 0, seed [9528],round 1 we find one with acc: 95.2542372881356, loss: 0.16360128462567167
+At fold 0, seed [9528],round 2 we find one with acc: 93.89830508474576, loss: 0.1724484590150542
+At fold 0, seed [9528],round 3 we find one with acc: 94.57627118644068, loss: 0.1680288697577129
+At fold 1, seed [9528],round 1 we find one with acc: 92.51700680272108, loss: 0.18725029318308345
+At fold 1, seed [9528],round 2 we find one with acc: 93.5374149659864, loss: 0.18473204159412254
+At fold 2, seed [9528],round 1 we find one with acc: 93.19727891156462, loss: 0.21015139785753625
+At fold 2, seed [9528],round 2 we find one with acc: 92.85714285714286, loss: 0.22500865516208468
+We are going to give up this round
+At fold 3, seed [9528],round 1 we find one with acc: 91.83673469387755, loss: 0.2150484881028026
+At fold 3, seed [9528],round 2 we find one with acc: 93.5374149659864, loss: 0.19862863330208524
+At fold 4, seed [9528],round 1 we find one with acc: 92.85714285714286, loss: 0.21085707224956174
+At fold 4, seed [9528],round 2 we find one with acc: 91.83673469387755, loss: 0.23150489585740225
+We are going to give up this round
+At fold 0, seed [2832],round 1 we find one with acc: 93.55932203389831, loss: 0.1883123424093602
+At fold 0, seed [2832],round 2 we find one with acc: 93.55932203389831, loss: 0.19686629155934868
+At fold 1, seed [2832],round 1 we find one with acc: 90.1360544217687, loss: 0.2691606662305845
+At fold 1, seed [2832],round 2 we find one with acc: 91.49659863945578, loss: 0.24085702093280092
+We are going to give up this round
+At fold 2, seed [2832],round 1 we find one with acc: 91.83673469387755, loss: 0.2346228662194038
+At fold 2, seed [2832],round 2 we find one with acc: 92.17687074829932, loss: 0.24057787717605122
+We are going to give up this round
+At fold 3, seed [2832],round 1 we find one with acc: 94.5578231292517, loss: 0.18991652546691246
+At fold 3, seed [2832],round 2 we find one with acc: 94.5578231292517, loss: 0.17489027510694907
+At fold 4, seed [2832],round 1 we find one with acc: 94.89795918367346, loss: 0.14467268046878634
+At fold 4, seed [2832],round 2 we find one with acc: 95.91836734693878, loss: 0.13999295270159132
+At fold 4, seed [2832],round 3 we find one with acc: 94.89795918367346, loss: 0.17567147461532737
+
+At fold 0, seed [2693],round 1 we find one with acc: 93.55932203389831, loss: 0.2190330953921302
+At fold 0, seed [2693],round 2 we find one with acc: 94.23728813559322, loss: 0.1908875891717814
+At fold 1, seed [2693],round 1 we find one with acc: 93.19727891156462, loss: 0.1898737131890391
+At fold 1, seed [2693],round 2 we find one with acc: 93.87755102040816, loss: 0.1936637882624759
+At fold 2, seed [2693],round 1 we find one with acc: 93.5374149659864, loss: 0.19273735096259992
+At fold 2, seed [2693],round 2 we find one with acc: 93.5374149659864, loss: 0.20042351557283986
+At fold 3, seed [2693],round 1 we find one with acc: 92.17687074829932, loss: 0.2514259275935945
+At fold 3, seed [2693],round 2 we find one with acc: 91.83673469387755, loss: 0.25032241571517216
+We are going to give up this round
+At fold 4, seed [2693],round 1 we find one with acc: 93.87755102040816, loss: 0.18362471324448681
+At fold 4, seed [2693],round 2 we find one with acc: 93.5374149659864, loss: 0.19844953872922327
+
+At fold 0, seed [8560],round 1 we find one with acc: 93.89830508474576, loss: 0.17912908795021348
+At fold 0, seed [8560],round 2 we find one with acc: 93.55932203389831, loss: 0.19163851006808927
+At fold 1, seed [8560],round 1 we find one with acc: 92.17687074829932, loss: 0.23834455246422567
+At fold 1, seed [8560],round 2 we find one with acc: 92.17687074829932, loss: 0.24403095559603502
+We are going to give up this round
+At fold 2, seed [8560],round 1 we find one with acc: 94.21768707482993, loss: 0.15859305818064684
+At fold 2, seed [8560],round 2 we find one with acc: 93.87755102040816, loss: 0.18128488075976468
+At fold 3, seed [8560],round 1 we find one with acc: 93.5374149659864, loss: 0.18208023895617245
+At fold 3, seed [8560],round 2 we find one with acc: 93.19727891156462, loss: 0.21200056110515075
+At fold 4, seed [8560],round 1 we find one with acc: 93.87755102040816, loss: 0.18290870195748854
+At fold 4, seed [8560],round 2 we find one with acc: 94.21768707482993, loss: 0.18756102289066834
+At fold 0, seed [6830],round 1 we find one with acc: 94.23728813559322, loss: 0.3861860836966563
+At fold 0, seed [6830],round 2 we find one with acc: 94.91525423728814, loss: 100
+We are going to give up this round
+At fold 1, seed [6830],round 1 we find one with acc: 92.51700680272108, loss: 0.20513980191986578
+At fold 1, seed [6830],round 2 we find one with acc: 91.49659863945578, loss: 0.22575030977628668
+We are going to give up this round
+At fold 2, seed [6830],round 1 we find one with acc: 93.87755102040816, loss: 0.2174461581269089
+At fold 2, seed [6830],round 2 we find one with acc: 93.5374149659864, loss: 0.2121244910217467
+We are going to give up this round
+At fold 3, seed [6830],round 1 we find one with acc: 95.23809523809524, loss: 0.17460405177810565
+At fold 3, seed [6830],round 2 we find one with acc: 94.5578231292517, loss: 0.18211240356876737
+At fold 4, seed [6830],round 1 we find one with acc: 92.51700680272108, loss: 0.20807568587007977
+At fold 4, seed [6830],round 2 we find one with acc: 92.51700680272108, loss: 0.23338431545666286
+We are going to give up this round
+
+At fold 0, seed [3796],round 1 we find one with acc: 92.88135593220339, loss: 0.2007678994687937
+At fold 0, seed [3796],round 2 we find one with acc: 92.88135593220339, loss: 0.21360892936334772
+We are going to give up this round
+At fold 1, seed [3796],round 1 we find one with acc: 93.19727891156462, loss: 0.2045301501037312
+At fold 1, seed [3796],round 2 we find one with acc: 94.21768707482993, loss: 0.1855663243605166
+At fold 2, seed [3796],round 1 we find one with acc: 92.85714285714286, loss: 0.1971705074922568
+At fold 2, seed [3796],round 2 we find one with acc: 93.19727891156462, loss: 0.19690930964995404
+At fold 3, seed [3796],round 1 we find one with acc: 91.49659863945578, loss: 0.252424503264784
+At fold 3, seed [3796],round 2 we find one with acc: 90.81632653061224, loss: 0.24457868680256564
+We are going to give up this round
+At fold 4, seed [3796],round 1 we find one with acc: 94.5578231292517, loss: 0.16513606903402983
+At fold 4, seed [3796],round 2 we find one with acc: 94.21768707482993, loss: 100
+At fold 0, seed [7198],round 1 we find one with acc: 93.22033898305085, loss: 0.18527459214299413
+At fold 0, seed [7198],round 2 we find one with acc: 93.55932203389831, loss: 0.17361085606833634
+At fold 1, seed [7198],round 1 we find one with acc: 93.87755102040816, loss: 0.2225730005575686
+At fold 1, seed [7198],round 2 we find one with acc: 92.51700680272108, loss: 0.23767757273855664
+We are going to give up this round
+At fold 2, seed [7198],round 1 we find one with acc: 94.21768707482993, loss: 0.173781225571827
+At fold 2, seed [7198],round 2 we find one with acc: 93.87755102040816, loss: 0.1811155092452659
+At fold 3, seed [7198],round 1 we find one with acc: 93.87755102040816, loss: 0.1873527695329822
+At fold 3, seed [7198],round 2 we find one with acc: 92.85714285714286, loss: 0.2087682617359421
+At fold 4, seed [7198],round 1 we find one with acc: 92.85714285714286, loss: 0.2269344396737157
+At fold 4, seed [7198],round 2 we find one with acc: 91.83673469387755, loss: 0.24436505493663607
+We are going to give up this round
+At fold 0, seed [6157],round 1 we find one with acc: 90.16949152542372, loss: 0.24089519027936257
+At fold 0, seed [6157],round 2 we find one with acc: 91.52542372881356, loss: 0.2317904065221043
+We are going to give up this round
+At fold 1, seed [6157],round 1 we find one with acc: 92.51700680272108, loss: 0.20234142629062238
+At fold 1, seed [6157],round 2 we find one with acc: 92.85714285714286, loss: 0.36670094627101407
+We are going to give up this round
+At fold 2, seed [6157],round 1 we find one with acc: 91.49659863945578, loss: 0.25264500649202437
+At fold 2, seed [6157],round 2 we find one with acc: 93.19727891156462, loss: 0.22274152164151068
+We are going to give up this round
+At fold 3, seed [6157],round 1 we find one with acc: 96.25850340136054, loss: 100
+At fold 3, seed [6157],round 2 we find one with acc: 96.59863945578232, loss: 0.13568650713177766
+At fold 4, seed [6157],round 1 we find one with acc: 94.89795918367346, loss: 0.15727920576828677
+At fold 4, seed [6157],round 2 we find one with acc: 93.87755102040816, loss: 100
+
+
+Second training, At fold 0, seed 6830,round 1 we find one with acc: 91.86440677966101, loss: 0.2456982009491678
+Second training, At fold 0, seed 6830,round 2 we find one with acc: 91.86440677966101, loss: 0.23102577672166338
+We are going to give up this round
+Phase2, At fold 0, seed [7135],round 1 we find one with acc: 93.55932203389831, loss: 0.2240808442487555
+Phase2, At fold 0, seed [7135],round 2 we find one with acc: 93.55932203389831, loss: 0.2079596897303048
+Phase2, At fold 1, seed [7135],round 1 we find one with acc: 94.89795918367346, loss: 0.1701679014835228
+Phase2, At fold 1, seed [7135],round 2 we find one with acc: 95.23809523809524, loss: 0.14296855346686174
+Phase2, At fold 1, seed [7135],round 3 we find one with acc: 94.21768707482993, loss: 0.17138780582518803
+Phase2, At fold 2, seed [7135],round 1 we find one with acc: 92.17687074829932, loss: 0.24128405476103024
+Phase2, At fold 2, seed [7135],round 2 we find one with acc: 91.49659863945578, loss: 0.25382110669093877
+Phase2, At fold 3, seed [7135],round 1 we find one with acc: 92.85714285714286, loss: 0.19907470762121435
+Phase2, At fold 3, seed [7135],round 2 we find one with acc: 92.85714285714286, loss: 0.183856349235692
+Phase2, At fold 4, seed [7135],round 1 we find one with acc: 94.21768707482993, loss: 0.18849452002113368
+Phase2, At fold 4, seed [7135],round 2 we find one with acc: 93.19727891156462, loss: 0.1785587087577703
+Phase3, At fold 0, seed [25364],round 1 we find one with acc: 93.22033898305085, loss: 0.2091545959524179
+Phase3, At fold 0, seed [25364],round 2 we find one with acc: 93.22033898305085, loss: 0.21422489616325346
+Phase3, At fold 1, seed [25364],round 1 we find one with acc: 94.5578231292517, loss: 0.16752917638846807
+Phase3, At fold 1, seed [25364],round 2 we find one with acc: 94.89795918367346, loss: 0.15954872570475753
+Phase3, At fold 1, seed [25364],round 3 we find one with acc: 94.5578231292517, loss: 0.171537834669457
+Phase3, At fold 2, seed [25364],round 1 we find one with acc: 93.19727891156462, loss: 0.20237171163364331
+Phase3, At fold 2, seed [25364],round 2 we find one with acc: 93.19727891156462, loss: 0.19890307477947805
+Phase3, At fold 3, seed [25364],round 1 we find one with acc: 93.87755102040816, loss: 0.1726550537915457
+Phase3, At fold 3, seed [25364],round 2 we find one with acc: 92.85714285714286, loss: 0.19017973805771393
+Phase3, At fold 3, seed [25364],round 3 we find one with acc: 95.23809523809524, loss: 0.15233056156002744
+Phase3, At fold 4, seed [25364],round 1 we find one with acc: 91.83673469387755, loss: 0.2632363549097866
+Phase3, At fold 4, seed [25364],round 2 we find one with acc: 92.17687074829932, loss: 0.24695640366499116
+
+Phase3, At fold 0, seed [23374],round 1 we find one with acc: 91.86440677966101, loss: 0.22650130956859912
+Phase3, At fold 0, seed [23374],round 2 we find one with acc: 93.89830508474576, loss: 0.22010508806018506
+Phase3, At fold 1, seed [23374],round 1 we find one with acc: 91.83673469387755, loss: 0.23031907199191398
+Phase3, At fold 1, seed [23374],round 2 we find one with acc: 91.49659863945578, loss: 0.21065083308284785
+Phase3, At fold 2, seed [23374],round 1 we find one with acc: 94.5578231292517, loss: 0.19220204258553025
+Phase3, At fold 2, seed [23374],round 2 we find one with acc: 94.5578231292517, loss: 0.19761095221350794
+Phase3, At fold 3, seed [23374],round 1 we find one with acc: 94.5578231292517, loss: 0.16668395049312487
+Phase3, At fold 3, seed [23374],round 2 we find one with acc: 94.89795918367346, loss: 0.16386611445420454
+Phase3, At fold 3, seed [23374],round 3 we find one with acc: 94.21768707482993, loss: 0.17369971926114997
+Phase3, At fold 4, seed [23374],round 1 we find one with acc: 93.5374149659864, loss: 0.2012652719304675
+Phase3, At fold 4, seed [23374],round 2 we find one with acc: 93.19727891156462, loss: 0.19400189279699
+Phase3, At fold 0, seed [23458],round 1 we find one with acc: 94.57627118644068, loss: 0.18260792872663273
+Phase3, At fold 0, seed [23458],round 2 we find one with acc: 94.23728813559322, loss: 0.16555341762506356
+Phase3, At fold 0, seed [23458],round 3 we find one with acc: 94.91525423728814, loss: 0.1660591702845137
+Phase3, At fold 1, seed [23458],round 1 we find one with acc: 95.91836734693878, loss: 0.14585196637377448
+Phase3, At fold 1, seed [23458],round 2 we find one with acc: 95.578231292517, loss: 0.14996610855569645
+Phase3, At fold 1, seed [23458],round 3 we find one with acc: 95.578231292517, loss: 0.1637561895003935
+Phase3, At fold 2, seed [23458],round 1 we find one with acc: 94.21768707482993, loss: 0.20306836737661946
+Phase3, At fold 2, seed [23458],round 2 we find one with acc: 93.5374149659864, loss: 0.2038806520757221
+Phase3, At fold 3, seed [23458],round 1 we find one with acc: 92.17687074829932, loss: 0.2431527798881336
+Phase3, At fold 3, seed [23458],round 2 we find one with acc: 91.83673469387755, loss: 0.22974875751806764
+Phase3, At fold 4, seed [23458],round 1 we find one with acc: 92.17687074829932, loss: 0.23245147144307896
+Phase3, At fold 4, seed [23458],round 2 we find one with acc: 90.81632653061224, loss: 0.23360420641850452
+Phase3, At fold 0, seed [21739],round 1 we find one with acc: 93.22033898305085, loss: 0.1967791968356755
+Phase3, At fold 0, seed [21739],round 2 we find one with acc: 93.22033898305085, loss: 0.19615537794464727
+Phase3, At fold 1, seed [21739],round 1 we find one with acc: 91.49659863945578, loss: 0.2537176446849797
+Phase3, At fold 1, seed [21739],round 2 we find one with acc: 91.15646258503402, loss: 0.24510010144337505
+Phase3, At fold 2, seed [21739],round 1 we find one with acc: 94.21768707482993, loss: 0.18248225920865324
+Phase3, At fold 2, seed [21739],round 2 we find one with acc: 93.5374149659864, loss: 0.19424675364478106
+Phase3, At fold 3, seed [21739],round 1 we find one with acc: 94.5578231292517, loss: 0.185374512862997
+Phase3, At fold 3, seed [21739],round 2 we find one with acc: 93.87755102040816, loss: 0.18422890013577986
+Phase3, At fold 4, seed [21739],round 1 we find one with acc: 94.89795918367346, loss: 0.15113460120497918
+Phase3, At fold 4, seed [21739],round 2 we find one with acc: 94.5578231292517, loss: 0.15143008953353174
+Phase3, At fold 4, seed [21739],round 3 we find one with acc: 94.89795918367346, loss: 0.15922934997852156
+
+Phase4, At fold 0, seed 25364,round 1 we find one with acc: 90.16949152542372, loss: 0.2444691221087666
+Phase4, At fold 0, seed 25364,round 2 we find one with acc: 91.1864406779661, loss: 0.23396236732349557
+Phase4, At fold 0, seed 25364,round 3 we find one with acc: 91.86440677966101, loss: 0.23920478964761152
+Phase4, At fold 1, seed 25364,round 1 we find one with acc: 94.89795918367346, loss: 0.1668308477620689
+Phase4, At fold 1, seed 25364,round 2 we find one with acc: 95.23809523809524, loss: 0.1527542131794553
+Phase4, At fold 1, seed 25364,round 3 we find one with acc: 94.89795918367346, loss: 0.16496576465108767
+Phase4, At fold 2, seed 25364,round 1 we find one with acc: 92.51700680272108, loss: 0.22491240217572167
+Phase4, At fold 2, seed 25364,round 2 we find one with acc: 92.17687074829932, loss: 0.2322717976002466
+Phase4, At fold 2, seed 25364,round 3 we find one with acc: 93.5374149659864, loss: 0.20037819019385747
+Phase4, At fold 3, seed 25364,round 1 we find one with acc: 94.5578231292517, loss: 0.1587490301807316
+Phase4, At fold 3, seed 25364,round 2 we find one with acc: 95.23809523809524, loss: 0.15461719558149778
+Phase4, At fold 3, seed 25364,round 3 we find one with acc: 95.23809523809524, loss: 0.1630706284068474
+Phase4, At fold 4, seed 25364,round 1 we find one with acc: 94.5578231292517, loss: 0.1708099939385239
+Phase4, At fold 4, seed 25364,round 2 we find one with acc: 94.89795918367346, loss: 0.15636469930613123
+Phase4, At fold 4, seed 25364,round 3 we find one with acc: 94.21768707482993, loss: 0.17844437904098406

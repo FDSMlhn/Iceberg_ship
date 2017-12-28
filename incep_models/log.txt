@@ -1,0 +1,10 @@
+Phase1, At fold 0, seed [33864],round 1 we find one with acc: 90.84745762711864, loss: 0.23743419323937368
+Phase1, At fold 0, seed [33864],round 2 we find one with acc: 91.86440677966101, loss: 0.20961492940530937
+Phase1, At fold 1, seed 33864,round 1 we find one with acc: 89.79591836734694, loss: 0.27762671159643704
+Phase1, At fold 1, seed 33864,round 2 we find one with acc: 88.77551020408163, loss: 0.28265695821265785
+Phase1, At fold 2, seed 33864,round 1 we find one with acc: 94.89795918367346, loss: 0.16098375871878903
+Phase1, At fold 2, seed 33864,round 2 we find one with acc: 94.5578231292517, loss: 0.15605350918307595
+Phase1, At fold 3, seed 33864,round 1 we find one with acc: 91.15646258503402, loss: 0.24878086889682172
+Phase1, At fold 3, seed 33864,round 2 we find one with acc: 89.45578231292517, loss: 0.271390911673202
+Phase1, At fold 4, seed 33864,round 1 we find one with acc: 89.79591836734694, loss: 0.25106191554037083
+Phase1, At fold 4, seed 33864,round 2 we find one with acc: 90.81632653061224, loss: 0.21282833682841995
