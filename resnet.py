@@ -116,7 +116,7 @@ class ResNet(nn.Module):
         self.inplanes = 64
         self.dropout= dropout
         super(ResNet, self).__init__()
-        self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=1, padding=3,
+        self.conv1 = nn.Conv2d(3, 64, kernel_size=7, stride=2, padding=3,
                                bias=False)
         self.bn1 = nn.BatchNorm2d(64)
         self.relu = nn.ReLU(inplace=True)
@@ -125,7 +125,7 @@ class ResNet(nn.Module):
         self.layer2 = self._make_layer(block, 128, layers[1], stride=2,drop_out=self.dropout[1])
         self.layer3 = self._make_layer(block, 256, layers[2], stride=2,drop_out=self.dropout[2])
         self.layer4 = self._make_layer(block, 512, layers[3], stride=2,drop_out=self.dropout[3])
-        self.avgpool = nn.AvgPool2d(5, stride=1)   # if input stride 1 output 5
+        self.avgpool = nn.AvgPool2d(7, stride=1)   # if input stride 1 output 5
         self.fc = nn.Linear(512 * block.expansion, num_classes)
         #self.dp = nn.Dropout(p=0.5)
         
@@ -165,6 +165,7 @@ class ResNet(nn.Module):
         x = self.layer3(x)
         x = self.layer4(x)
         
+        print(x.size())
         x = self.avgpool(x)
         x = x.view(x.size(0), -1)
         #x = self.dp(x)

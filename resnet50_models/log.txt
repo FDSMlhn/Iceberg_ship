@@ -1,0 +1,68 @@
+10folds, Phase1, At fold 0, seed 9220,round 1 we find one with acc: 90.06211180124224, loss: 0.25641241901039336
+10folds, Phase1, At fold 0, seed 9220,round 2 we find one with acc: 89.44099378881988, loss: 0.2816135857416236
+10folds, Phase1, At fold 1, seed 9220,round 1 we find one with acc: 91.30434782608695, loss: 0.24187224779440009
+10folds, Phase1, At fold 1, seed 9220,round 2 we find one with acc: 93.7888198757764, loss: 0.1981692340063012
+10folds, Phase1, At fold 2, seed 9220,round 1 we find one with acc: 95.03105590062111, loss: 0.16119022415198894
+10folds, Phase1, At fold 2, seed 9220,round 2 we find one with acc: 90.06211180124224, loss: 0.22934072367523028
+10folds, Phase1, At fold 3, seed 9220,round 1 we find one with acc: 91.92546583850931, loss: 0.19699560429738916
+10folds, Phase1, At fold 3, seed 9220,round 2 we find one with acc: 94.40993788819875, loss: 0.1561433703447721
+10folds, Phase1, At fold 4, seed 9220,round 1 we find one with acc: 90.625, loss: 0.26243245005607607
+10folds, Phase1, At fold 4, seed 9220,round 2 we find one with acc: 92.5, loss: 0.2277993805706501
+10folds, Phase1, At fold 5, seed 9220,round 1 we find one with acc: 91.875, loss: 0.24525368213653564
+10folds, Phase1, At fold 5, seed 9220,round 2 we find one with acc: 91.875, loss: 0.25161583423614503
+10folds, Phase1, At fold 6, seed 9220,round 1 we find one with acc: 92.5, loss: 0.21984098851680756
+10folds, Phase1, At fold 6, seed 9220,round 2 we find one with acc: 89.375, loss: 0.24136103987693786
+10folds, Phase1, At fold 7, seed 9220,round 1 we find one with acc: 87.5, loss: 0.2886573851108551
+10folds, Phase1, At fold 7, seed 9220,round 2 we find one with acc: 95.0, loss: 0.19076163321733475
+10folds, Phase1, At fold 8, seed 9220,round 1 we find one with acc: 91.25, loss: 0.22044966369867325
+10folds, Phase1, At fold 8, seed 9220,round 2 we find one with acc: 94.375, loss: 0.17656180411577224
+10folds, Phase1, At fold 9, seed 9220,round 1 we find one with acc: 89.375, loss: 0.2779508590698242
+10folds, Phase1, At fold 9, seed 9220,round 2 we find one with acc: 89.375, loss: 0.2676992893218994
+10folds, Phase2,with augmentation, At fold 0, seed 9021,round 1 we find one with acc: 95.03105590062111, loss: 0.16479365044036268
+10folds, Phase2,with augmentation, At fold 1, seed 9021,round 1 we find one with acc: 92.54658385093168, loss: 0.17859719508553143
+10folds, Phase2,with augmentation, At fold 2, seed 9021,round 1 we find one with acc: 91.92546583850931, loss: 0.21084391024912366
+10folds, Phase2,with augmentation, At fold 3, seed 9021,round 1 we find one with acc: 91.30434782608695, loss: 0.1912319177055951
+10folds, Phase2,with augmentation, At fold 0, seed 9021,round 1 we find one with acc: 96.27329192546584, loss: 0.17095932003504
+10folds, Phase2,with augmentation, At fold 0, seed 9021,round 2 we find one with acc: 95.03105590062111, loss: 0.16581373789017986
+10folds, Phase2,with augmentation, At fold 1, seed 9021,round 1 we find one with acc: 92.54658385093168, loss: 0.19599986539123962
+10folds, Phase2,with augmentation, At fold 1, seed 9021,round 2 we find one with acc: 92.54658385093168, loss: 0.1733171411367677
+10folds, Phase2,with augmentation, At fold 2, seed 9021,round 1 we find one with acc: 91.92546583850931, loss: 0.22134168700586934
+10folds, Phase2,with augmentation, At fold 2, seed 9021,round 2 we find one with acc: 90.6832298136646, loss: 0.2190303859410819
+10folds, Phase2,with augmentation, At fold 3, seed 9021,round 1 we find one with acc: 91.30434782608695, loss: 0.21518208502982714
+10folds, Phase2,with augmentation, At fold 3, seed 9021,round 2 we find one with acc: 90.06211180124224, loss: 0.21608448926336277
+10folds, Phase2,with augmentation, At fold 4, seed 9021,round 1 we find one with acc: 91.25, loss: 0.24414775669574737
+10folds, Phase2,with augmentation, At fold 4, seed 9021,round 2 we find one with acc: 93.75, loss: 0.23215826451778412
+10folds, Phase2,with augmentation, At fold 5, seed 9021,round 1 we find one with acc: 98.125, loss: 100
+10folds, Phase2,with augmentation, At fold 5, seed 9021,round 2 we find one with acc: 97.5, loss: 100
+10folds, Phase2,with augmentation, At fold 5, seed 9021,round 3 we find one with acc: 96.875, loss: 100
+10folds, Phase2,with augmentation, At fold 6, seed 9021,round 1 we find one with acc: 92.5, loss: 0.2281209945678711
+10folds, Phase2,with augmentation, At fold 6, seed 9021,round 2 we find one with acc: 93.125, loss: 0.220481339097023
+10folds, Phase2,with augmentation, At fold 7, seed 9021,round 1 we find one with acc: 94.375, loss: 0.19899997115135193
+10folds, Phase2,with augmentation, At fold 7, seed 9021,round 2 we find one with acc: 91.25, loss: 0.21723479628562928
+10folds, Phase2,with augmentation, At fold 8, seed 9021,round 1 we find one with acc: 93.125, loss: 0.1750522032380104
+10folds, Phase2,with augmentation, At fold 8, seed 9021,round 2 we find one with acc: 92.5, loss: 0.19862033873796464
+10folds, Phase2,with augmentation, At fold 9, seed 9021,round 1 we find one with acc: 91.875, loss: 0.24764818847179412
+10folds, Phase2,with augmentation, At fold 9, seed 9021,round 2 we find one with acc: 91.25, loss: 0.25650371313095094
+10folds, Phase2,with augmentation, At fold 9, seed 9021,round 3 we find one with acc: 91.875, loss: 0.23225605934858323
+10folds, Phase2,with augmentation, At fold 5, seed 9021,round 1 we find one with acc: 96.875, loss: 0.15669691264629365
+10folds, Phase2,with augmentation, At fold 5, seed 9021,round 2 we find one with acc: 97.5, loss: 0.1739394634962082
+10folds, Phase3,with augm, At fold 0, seed 2170,round 1 we find one with acc: 88.19875776397515, loss: 0.2606050748817669
+10folds, Phase3,with augm, At fold 0, seed 2170,round 2 we find one with acc: 92.54658385093168, loss: 0.21921243837901525
+10folds, Phase3,with augm, At fold 1, seed 2170,round 1 we find one with acc: 96.8944099378882, loss: 0.11521336750954575
+10folds, Phase3,with augm, At fold 1, seed 2170,round 2 we find one with acc: 95.03105590062111, loss: 0.13792801764070617
+10folds, Phase3,with augm, At fold 2, seed 2170,round 1 we find one with acc: 94.40993788819875, loss: 0.19366871796964857
+10folds, Phase3,with augm, At fold 2, seed 2170,round 2 we find one with acc: 93.7888198757764, loss: 0.19353959565947515
+10folds, Phase3,with augm, At fold 3, seed 2170,round 1 we find one with acc: 93.7888198757764, loss: 0.16900170034503345
+10folds, Phase3,with augm, At fold 3, seed 2170,round 2 we find one with acc: 95.65217391304348, loss: 0.18551834954978516
+10folds, Phase3,with augm, At fold 4, seed 2170,round 1 we find one with acc: 90.625, loss: 0.25018190741539004
+10folds, Phase3,with augm, At fold 4, seed 2170,round 2 we find one with acc: 92.5, loss: 0.21836901754140853
+10folds, Phase3,with augm, At fold 5, seed 2170,round 1 we find one with acc: 89.375, loss: 0.2513682544231415
+10folds, Phase3,with augm, At fold 5, seed 2170,round 2 we find one with acc: 91.875, loss: 0.22409132719039918
+10folds, Phase3,with augm, At fold 6, seed 2170,round 1 we find one with acc: 93.75, loss: 0.16519343554973603
+10folds, Phase3,with augm, At fold 6, seed 2170,round 2 we find one with acc: 93.125, loss: 0.16909390389919282
+10folds, Phase3,with augm, At fold 7, seed 2170,round 1 we find one with acc: 93.75, loss: 0.17486469447612762
+10folds, Phase3,with augm, At fold 7, seed 2170,round 2 we find one with acc: 96.875, loss: 0.12502912282943726
+10folds, Phase3,with augm, At fold 8, seed 2170,round 1 we find one with acc: 92.5, loss: 0.226381254196167
+10folds, Phase3,with augm, At fold 8, seed 2170,round 2 we find one with acc: 93.125, loss: 0.22830969989299774
+10folds, Phase3,with augm, At fold 9, seed 2170,round 1 we find one with acc: 94.375, loss: 0.15994667410850524
+10folds, Phase3,with augm, At fold 9, seed 2170,round 2 we find one with acc: 93.125, loss: 0.18866937309503556
