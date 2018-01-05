@@ -68,6 +68,7 @@ class Inception3(nn.Module):
                 m.bias.data.zero_()
 
     def forward(self, x):
+        x, angle =x
         if self.transform_input:
             x = x.clone()
             x[:, 0] = x[:, 0] * (0.229 / 0.5) + (0.485 - 0.5) / 0.5
@@ -119,6 +120,7 @@ class Inception3(nn.Module):
         # 1 x 1 x 2048
         x = x.view(x.size(0), -1)
         # 2048
+        x = torch.cat((x,angle),1)
         x = self.fc(x)
         # 1000 (num_classes)
         if self.training and self.aux_logits:
