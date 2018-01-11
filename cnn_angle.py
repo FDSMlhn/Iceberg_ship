@@ -14,12 +14,12 @@ class plain_cnn(nn.Module):
         self.layer4 = self._make_layer(layers[3], dropout=dropout[3])
         
         self.n =5
-        self.fc1 = nn.Linear(64 * self.n*self.n+1, 64 * self.n*self.n)
-        self.bn1 = nn.BatchNorm1d(64 * self.n*self.n)
+        self.fc1 = nn.Linear(64 * self.n*self.n+1, 32 * self.n*self.n)
+        self.bn1 = nn.BatchNorm1d(32 * self.n*self.n)
         self.relu1 =nn.ReLU()
         self.dropout1 = nn.Dropout2d(p=0.4)
         
-        self.fc2 = nn.Linear(64 * self.n*self.n, 32 * self.n*self.n)
+        self.fc2 = nn.Linear(32 * self.n*self.n, 32 * self.n*self.n)
         self.bn2 = nn.BatchNorm1d(32 * self.n*self.n)
         self.relu2 =nn.ReLU()
         self.dropout2 = nn.Dropout2d(p=0.4)
@@ -48,7 +48,7 @@ class plain_cnn(nn.Module):
         
         x = x.view(x.size(0), -1)
         #print(x.size(),angle.size())
-        x= torch.cat((x,angle),1)
+        x= torch.cat((x,angle.unsqueeze(1)),1)
         x = self.dropout1(self.relu1(self.bn1(self.fc1(x))))
         x = self.dropout2(self.relu2(self.bn2(self.fc2(x))))
         x = self.fc3(x)
