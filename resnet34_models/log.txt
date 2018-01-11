@@ -147,3 +147,4 @@
 10folds, Phase1,At fold 9, seed 95338,round 1 we find one with acc: 94.375, loss: 0.15594058036804198
 10folds, Phase1,At fold 9, seed 95338,round 2 we find one with acc: 94.375, loss: 0.15632169246673583
 10folds, Phase1,At fold 9, seed 95338,round 3 we find one with acc: 94.375, loss: 0.1634141743183136
+10folds, Phase1,At fold 0, seed 94372,round 1 we find one with acc: 95.03105590062111, loss: 0.16926604277969148
