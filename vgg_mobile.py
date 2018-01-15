@@ -19,6 +19,53 @@ model_urls = {
     'vgg19_bn': 'https://download.pytorch.org/models/vgg19_bn-c79401a0.pth',
 }
 
+class MobileNet(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+
+        def conv_bn(inp, oup, stride):
+            return nn.Sequential(
+                nn.Conv2d(inp, oup, 3, stride, 1, bias=False),
+                nn.BatchNorm2d(oup),
+                nn.ReLU(inplace=True)
+            )
+
+        def conv_dw(inp, oup, stride):
+            return nn.Sequential(
+                nn.Conv2d(inp, inp, 3, stride, 1, groups=inp, bias=False),
+                nn.BatchNorm2d(inp),
+                nn.ReLU(inplace=True),
+    
+                nn.Conv2d(inp, oup, 1, 1, 0, bias=False),
+                nn.BatchNorm2d(oup),
+                nn.ReLU(inplace=True),
+            )
+
+        self.model = nn.Sequential(
+            conv_bn(  3,  32, 2), 
+            conv_dw( 32,  64, 1),
+            conv_dw( 64, 128, 2),
+            conv_dw(128, 128, 1),
+            conv_dw(128, 256, 2),
+            conv_dw(256, 256, 1),
+            conv_dw(256, 512, 2),
+            conv_dw(512, 512, 1),
+            conv_dw(512, 512, 1),
+            conv_dw(512, 512, 1),
+            conv_dw(512, 512, 1),
+            conv_dw(512, 512, 1),
+            conv_dw(512, 1024, 2),
+            conv_dw(1024, 1024, 1),
+            nn.AvgPool2d(7),
+        )
+        # self.fc = nn.Linear(1024, 1000)
+
+    def forward(self, x):
+        x = self.model(x)
+        x = x.view(-1, 1024)
+        # x = self.fc(x)
+        return x
+
 
 class VGG(nn.Module):
 
@@ -35,10 +82,14 @@ class VGG(nn.Module):
             nn.Linear(4096, num_classes),
         )
         self._initialize_weights()
+        self.mobile = MobileNet()
 
     def forward(self, x):
+        x, angle = x
         x = self.features(x)
+        x_plus = self.mobile(x)
         x = x.view(x.size(0), -1)
+        x = torch.cat((x,x_plus, angle),1)
         x = self.classifier(x)
         return x
 
@@ -75,8 +126,8 @@ def make_layers(cfg, batch_norm=False):
 
 cfg = {
     'A': [64, 'M', 128, 'M', 256, 256, 'M', 512, 512, 'M', 512, 512, 'M'],
-    'B': [64, 64, 'M', 128, 128, 'M', 256, 256, 'M', 512, 512, 'M', 512, 512, 'M'],
-    'D': [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 'M', 512, 512, 512, 'M', 512, 512, 512, 'M'],
+    'B': [64, 64, 'M', 128, 128, 'M', 256, 256, 'M', 512, 512, 'M', 512, 512],
+    'D': [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 'M', 512, 512, 512, 'M', 512, 512, 512],
     'E': [64, 64, 'M', 128, 128, 'M', 256, 256, 256, 256, 'M', 512, 512, 512, 512, 'M', 512, 512, 512, 512, 'M'],
 }
 
