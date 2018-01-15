@@ -1,7 +1,7 @@
 import torch.nn as nn
 import torch.utils.model_zoo as model_zoo
 import math
-
+import torch
 
 __all__ = [
     'VGG', 'vgg11', 'vgg11_bn', 'vgg13', 'vgg13_bn', 'vgg16', 'vgg16_bn',
@@ -21,7 +21,7 @@ model_urls = {
 
 class MobileNet(nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
+        super().__init__()
 
         def conv_bn(inp, oup, stride):
             return nn.Sequential(
@@ -56,7 +56,7 @@ class MobileNet(nn.Module):
             conv_dw(512, 512, 1),
             conv_dw(512, 1024, 2),
             conv_dw(1024, 1024, 1),
-            nn.AvgPool2d(7),
+            nn.AvgPool2d(3),
         )
         # self.fc = nn.Linear(1024, 1000)
 
@@ -69,7 +69,7 @@ class MobileNet(nn.Module):
 
 class VGG(nn.Module):
 
-    def __init__(self, features, num_classes=2):
+    def __init__(self, features, num_classes=1000):
         super(VGG, self).__init__()
         self.features = features
         self.classifier = nn.Sequential(
@@ -82,13 +82,16 @@ class VGG(nn.Module):
             nn.Linear(4096, num_classes),
         )
         self._initialize_weights()
-        self.mobile = MobileNet()
+        self.avg= nn.AvgPool2d(3)
+#         self.mobile = MobileNet()
 
     def forward(self, x):
         x, angle = x
-        x = self.features(x)
         x_plus = self.mobile(x)
-        x = x.view(x.size(0), -1)
+        x = self.features(x)
+        x = self.avg(x)
+        x = x.squeeze(3)
+        x = x.squeeze(2)
         x = torch.cat((x,x_plus, angle),1)
         x = self.classifier(x)
         return x
